@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  padding: 20px;
+  padding: 10px;
 }
 
 button {
@@ -36,6 +36,13 @@ button {
   color: cyan;
 }
 
+.downloadButton{
+  width: auto;
+  margin-top: 10px;
+  background-color: #e0e0e0;
+  color: #252525;
+}
+
 main {
   margin-top: 20px;
   flex-grow: 1;
@@ -47,7 +54,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .top-caption,

@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import MemeGenerator from './Components/meme-generator/meme-generator';
