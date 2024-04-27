@@ -1,55 +1,103 @@
-/* src/App.css */
 .App {
-    text-align: center;
-  }
-  
-  .light {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .dark {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  header {
-    padding: 20px;
-  }
-  
-  button {
-    background-color: transparent;
-    color: inherit;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  main {
-    margin-top: 20px;
-  }
-  
-  .meme-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .top-caption,
-  .bottom-caption {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .top-caption {
-    top: 10px;
-  }
-  
-  .bottom-caption {
-    bottom: 10px;
-  }
-  
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.themeButton{
+  width:auto;
+  color: cyan;
+}
+
+main {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.meme-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.top-caption,
+.bottom-caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff; 
+}
+
+.top-caption {
+  top: 10px;
+}
+
+.bottom-caption {
+  bottom: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  /* display: block; */
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
