@@ -1,0 +1,55 @@
+/* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .light {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  main {
+    margin-top: 20px;
+  }
+  
+  .meme-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top-caption,
+  .bottom-caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .top-caption {
+    top: 10px;
+  }
+  
+  .bottom-caption {
+    bottom: 10px;
+  }
+  
