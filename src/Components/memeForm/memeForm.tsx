@@ -1,4 +1,3 @@
-// src/components/MemeForm.tsx
 import React, { useState } from 'react';
 
 interface MemeFormProps {
