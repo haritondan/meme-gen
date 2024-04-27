@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import MemeGenerator from './Components/meme-generator/meme-generator';
+import { FaSun } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
+
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -23,7 +26,9 @@ const App: React.FC = () => {
     <div className={`App ${theme}`}>
       <header>
         <h1>Meme Generator</h1>
-        <button onClick={toggleTheme}>Toggle Theme</button>
+        <button onClick={toggleTheme} className='themeButton'>
+          {theme === 'light' ? <FaMoon /> : <FaSun />}
+        </button>
       </header>
       <main>
         <MemeGenerator />
